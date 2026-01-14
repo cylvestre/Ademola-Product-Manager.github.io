@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Manager Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+        }
+
+        .contact-links {
+            margin-top: 20px;
+        }
+
+        .contact-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1rem;
+            opacity: 0.9;
+            transition: opacity 0.3s;
+        }
+
+        .contact-links a:hover {
+            opacity: 1;
+        }
+
+        section {
+            background: white;
+            margin: 40px auto;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #667eea;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .about-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .skill-category h3 {
+            color: #764ba2;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .skill-category ul {
+            list-style: none;
+        }
+
+        .skill-category li {
+            padding: 8px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .skill-category li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+        }
+
+        .project {
+            margin-bottom: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .project:last-child {
+            border-bottom: none;
+        }
+
+        .project h3 {
+            color: #333;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .project-meta {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+
+        .project-description {
+            margin: 15px 0;
+        }
+
+        .project-highlights {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        .project-highlights h4 {
+            color: #764ba2;
+            margin-bottom: 10px;
+        }
+
+        .project-highlights ul {
+            margin-left: 20px;
+        }
+
+        .project-highlights li {
+            margin: 8px 0;
+        }
+
+        .metrics {
+            display: flex;
+            gap: 30px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+
+        .metric {
+            background: white;
+            padding: 15px 20px;
+            border-radius: 5px;
+            border-left: 4px solid #667eea;
+        }
+
+        .metric strong {
+            display: block;
+            color: #667eea;
+            font-size: 1.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            section {
+                padding: 30px 20px;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Oloidi Ademola</h1>
+            <p>Aspiring Product Manager</p>
+            <div class="contact-links">
+                <a href="mailto:desmondkero@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/ademola-oloidi/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/cylvestre" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>I'm a passionate product management enthusiast with a strong foundation in user research, data analysis, and cross-functional collaboration. Through internships, academic projects, and self-driven initiatives, I've developed skills in defining product strategy, prioritizing features, and delivering user-centered solutions.</p>
+                <p style="margin-top: 15px;">I'm excited about leveraging technology to solve real problems and create products that make a meaningful impact on users' lives.</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills & Competencies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Product Strategy</h3>
+                    <ul>
+                        <li>Market Research</li>
+                        <li>Competitive Analysis</li>
+                        <li>User Personas</li>
+                        <li>Product Roadmapping</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Technical Skills</h3>
+                    <ul>
+                        <li>SQL & Data Analysis</li>
+                        <li>A/B Testing</li>
+                        <li>Wireframing (Figma)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Stakeholder Management</li>
+                        <li>User Interviews</li>
+                        <li>Data-Driven Decision Making</li>
+                        <li>Cross-Functional Leadership</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects & Case Studies</h2>
+
+            <div class="project">
+                <h3>Campus Food Delivery App - Product Redesign</h3>
+                <p class="project-meta">Personal Project | Jan 2025 - Present</p>
+                <p class="project-description">
+                    Identified user pain points in existing campus food delivery services through 15+ user interviews and designed a streamlined solution focused on reducing order time and improving delivery accuracy.
+                </p>
+                <div class="project-highlights">
+                    <h4>Key Responsibilities:</h4>
+                    <ul>
+                        <li>Conducted user research and created personas for 3 primary user segments</li>
+                        <li>Developed product requirements document (PRD) with prioritized feature list</li>
+                        <li>Created low and high-fidelity wireframes in Figma</li>
+                        <li>Defined success metrics and KPIs for MVP launch</li>
+                    </ul>
+                </div>
+                <div class="metrics">
+                    <div class="metric">
+                        <strong>15+</strong>
+                        <span>User Interviews</span>
+                    </div>
+                    <div class="metric">
+                        <strong>3</strong>
+                        <span>User Personas</span>
+                    </div>
+                    <div class="metric">
+                        <strong>20+</strong>
+                        <span>Features Prioritized</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <h3>Microsoft Teams Product Teardown</h3>
+                <p class="project-meta">Independent Analysis | Dec 2024</p>
+                <p class="project-description">
+                    Conducted a comprehensive product teardown of Microsoft Teams to identify opportunities for driving user engagement by unlocking marketplace potential. Analyzed competitive positioning, user pain points, and proposed strategic recommendations for product improvement.
+                </p>
+                
+                <div class="project-highlights">
+                    <h4>What is Microsoft Teams?</h4>
+                    <p style="margin-bottom: 15px;">Microsoft Teams is a unified collaboration platform combining workplace chat, video meetings, file storage, and application integration. Launched in 2017, it serves as the hub for teamwork in Microsoft 365, competing directly with Slack, Zoom, and Google Workspace.</p>
+                    
+                    <h4>Market Landscape Analysis:</h4>
+                    <ul>
+                        <li><strong>Brand Position & Market Perception:</strong> Enterprise-first solution with strong Microsoft ecosystem integration; perceived as powerful but complex compared to competitors</li>
+                        <li><strong>Daily Active Users:</strong> 320M+ DAU (as of 2024), dominant in enterprise market with 91 of Fortune 100 companies</li>
+                        <li><strong>Document Collaboration:</strong> Tight integration with Office 365 apps, real-time co-authoring, but fragmented UX across apps</li>
+                        <li><strong>AI Assistant:</strong> Copilot integration for meeting summaries, chat assistance, and content generation</li>
+                        <li><strong>User Experience:</strong> Feature-rich but steep learning curve; navigation complexity cited as top friction point</li>
+                        <li><strong>Security & Compliance:</strong> Industry-leading enterprise security, compliance certifications (SOC 2, GDPR, HIPAA)</li>
+                    </ul>
+                </div>
+
+                <div class="project-highlights">
+                    <h4>SWOT Analysis:</h4>
+                    <ul>
+                        <li><strong>Strengths:</strong> Deep Microsoft 365 integration, enterprise security, extensive app marketplace (1,500+ apps)</li>
+                        <li><strong>Weaknesses:</strong> Overwhelming interface for new users, app discovery challenges, inconsistent third-party app quality</li>
+                        <li><strong>Opportunities:</strong> Marketplace personalization, AI-driven app recommendations, simplified onboarding flows</li>
+                        <li><strong>Threats:</strong> Slack's superior UX, Zoom's video dominance, Google Workspace's simplicity</li>
+                    </ul>
+                </div>
+
+                <div class="project-highlights">
+                    <h4>Key Insights Compilation:</h4>
+                    <ul>
+                        <li>Only 23% of Teams users actively explore the app marketplace despite 1,500+ available integrations</li>
+                        <li>Average user utilizes 3-4 core features, leaving 70% of capabilities unused</li>
+                        <li>App discovery ranked as #2 pain point in user surveys (after navigation complexity)</li>
+                        <li>Teams with personalized app recommendations show 45% higher engagement rates</li>
+                    </ul>
+                </div>
+
+                <div class="project-highlights">
+                    <h4>Goal Definition:</h4>
+                    <p style="margin-bottom: 10px;"><strong>Primary Goal:</strong> Increase marketplace app adoption by 40% within 6 months by improving discoverability and personalization</p>
+                    <p><strong>Success Metrics:</strong> Apps per active user, marketplace visit rate, app retention (D30), time-to-first-app-install</p>
+                </div>
+
+                <div class="project-highlights">
+                    <h4>User Segments & Personas:</h4>
+                    <ul>
+                        <li><strong>The Overwhelmed Manager (Primary):</strong> Sarah, 38, leads distributed team of 12. Struggles to find productivity apps, relies only on default features. Values: time-saving, simplicity, proven ROI</li>
+                        <li><strong>The Power User (Secondary):</strong> Alex, 29, IT admin. Wants to customize Teams for organization but finds marketplace cluttered. Values: integration depth, customization, analytics</li>
+                        <li><strong>The Skeptical Executive (Tertiary):</strong> Michael, 52, C-suite. Needs to understand value before adoption. Values: security, proven business impact, ease of use</li>
+                    </ul>
+                </div>
+
+                <div class="project-highlights">
+                    <h4>User Journey Map:</h4>
+                    <ul>
+                        <li><strong>Awareness:</strong> User hears about app marketplace through tooltip (low visibility) → Pain point: Not discovering marketplace organically</li>
+                        <li><strong>Exploration:</strong> Opens marketplace, sees 1,500+ apps without context → Pain point: Analysis paralysis, no personalization</li>
+                        <li><strong>Evaluation:</strong> Reads generic descriptions, unclear value prop → Pain point: Can't assess fit for their workflow</li>
+                        <li><strong>Installation:</strong> Complex permission requests, admin approval needed → Pain point: Friction in adoption process</li>
+                        <li><strong>Activation:</strong> App installed but not configured, no onboarding → Pain point: 60% of installed apps never used</li>
+                    </ul>
+                </div>
+
+                <div class="project-highlights">
+                    <h4>Key User Struggles with Microsoft Teams:</h4>
+                    <ul>
+                        <li>App discovery: "I don't know what apps exist or which ones would help me"</li>
+                        <li>Relevance: "Too many apps, none seem tailored to my team's needs"</li>
+                        <li>Trust: "How do I know if an app is reliable and secure?"</li>
+                        <li>Activation gap: "I installed it, but now what? No guidance on setup"</li>
+                        <li>Permission fatigue: "Why do I need admin approval for a simple task app?"</li>
+                    </ul>
+                </div>
+
+                <div class="project-highlights">
+                    <h4>Prioritizing What Matters Most (RICE Framework):</h4>
+                    <ul>
+                        <li><strong>1. AI-Powered App Recommendations:</strong> RICE Score: 950 (High reach, high impact, medium confidence, low effort)</li>
+                        <li><strong>2. Contextual App Suggestions:</strong> RICE Score: 720 (Suggest apps based on user behavior, meeting context)</li>
+                        <li><strong>3. Simplified Onboarding Flows:</strong> RICE Score: 680 (Guided setup for newly installed apps)</li>
+                        <li><strong>4. Social Proof Integration:</strong> RICE Score: 540 (Show apps used by similar teams/industries)</li>
+                        <li><strong>5. Streamlined Permissions:</strong> RICE Score: 420 (Reduce admin approval friction for low-risk apps)</li>
+                    </ul>
+                </div>
+
+                <div class="project-highlights">
+                    <h4>Solution Space: Brainstorming Ideas</h4>
+                    <ul>
+                        <li><strong>"Apps for You" Dashboard:</strong> Personalized recommendations based on role, team size, and usage patterns</li>
+                        <li><strong>Smart Notifications:</strong> "Teams like yours use Polly for quick polls" during relevant scenarios</li>
+                        <li><strong>Template Library:</strong> Pre-configured app bundles for common use cases (Project Teams, Sales Teams, HR Teams)</li>
+                        <li><strong>In-App Tutorials:</strong> Interactive 2-minute walkthroughs for newly installed apps</li>
+                        <li><strong>Peer Reviews & Ratings:</strong> Company-specific app ratings visible within marketplace</li>
+                        <li><strong>Tiered Permissions:</strong> Auto-approve apps with verified security badges, flag high-risk apps only</li>
+                    </ul>
+                </div>
+
+                <div class="project-highlights">
+                    <h4>References & Resources:</h4>
+                    <ul>
+                        <li>Microsoft Teams Usage Statistics (Statista, 2024)</li>
+                        <li>G2 User Reviews - Microsoft Teams vs Competitors (500+ reviews analyzed)</li>
+                        <li>Microsoft 365 Blog: Teams Marketplace Updates</li>
+                        <li>"The State of Collaboration Tools" Report - Gartner 2024</li>
+                        <li>UserTesting.com - Teams UX Study (n=50 enterprise users)</li>
+                        <li>Conducted 8 user interviews with Teams administrators and daily users</li>
+                    </ul>
+                </div>
+
+                <div class="metrics">
+                    <div class="metric">
+                        <strong>320M+</strong>
+                        <span>Daily Active Users</span>
+                    </div>
+                    <div class="metric">
+                        <strong>23%</strong>
+                        <span>Marketplace Exploration Rate</span>
+                    </div>
+                    <div class="metric">
+                        <strong>1,500+</strong>
+                        <span>Available Apps</span>
+                    </div>
+                    <div class="metric">
+                        <strong>40%</strong>
+                        <span>Target Adoption Increase</span>
+                    </div>
+                </div>
+            </div>
+
+<p class="project-meta">Internship Project | Summer 2024</p>
+                <p class="project-description">
+                    Analyzed user behavior data to identify drop-off points in the checkout process and proposed design improvements to increase conversion rates.
+                </p>
+                <div class="project-highlights">
+                    <h4>Impact:</h4>
+                    <ul>
+                        <li>Used Google Analytics and Hotjar to analyze 10,000+ user sessions</li>
+                        <li>Identified 3 major friction points causing 35% cart abandonment</li>
+                        <li>Created A/B test plan for proposed checkout flow improvements</li>
+                        <li>Presented findings to senior product team with actionable recommendations</li>
+                    </ul>
+                </div>
+                <div class="metrics">
+                    <div class="metric">
+                        <strong>35%</strong>
+                        <span>Cart Abandonment Rate</span>
+                    </div>
+                    <div class="metric">
+                        <strong>10K+</strong>
+                        <span>Sessions Analyzed</span>
+                    </div>
+                    <div class="metric">
+                        <strong>12%</strong>
+                        <span>Projected Improvement</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="project">
+                <h3>Product Management Intern</h3>
+                <p class="project-meta">Roseon | Feb 2025 - Aug 2025</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>Supported senior PMs in defining feature requirements for mobile app updates</li>
+                    <li>Conducted competitive analysis on 5 competitor products in the market</li>
+                    <li>Facilitated daily standups and sprint retrospectives for development team</li>
+                    <li>Created user stories and acceptance criteria for 15+ features</li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3>Product Assistant Intern</h3>
+                <p class="project-meta">Cravvings | Aug 2024 - Dec 2024</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>Supported the product management team in market research and competitive analysis</li>
+                    <li>Assisted in gathering user feedback and translating it into actionable insights for product improvements</li>
+                    <li>Collaborated with designers to create user-friendly mockups and prototypes</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Certifications</h2>
+            <div style="margin-top: 20px;">
+                <ul style="margin-left: 20px; line-height: 2;">
+                    <li>AI for Product Managers - HELLOPM</li>
+                    <li>Introduction to Project Management Course - Codecademy</li>
+                    <li>Initiating and Planning Projects - Coursera</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Oloidi Ademola. All rights reserved.</p>
+            <p style="margin-top: 10px;">Built with passion for product management</p>
+        </div>
+    </footer>
+</body>
+</html>
